@@ -13,6 +13,12 @@ Comprehensive documentation for the Fanatico network infrastructure, including C
 │   ├── PIPELINE_OVERVIEW.md          # Complete pipeline documentation
 │   ├── GITHUB_ACTIONS_SETUP.md       # GitHub Actions configuration
 │   └── DEPLOYMENT_WORKFLOW.md        # Deployment process details
+├── AI-CODING/                        # AI Coding Agents documentation
+│   ├── README.md                     # AI tools overview and quick start
+│   ├── AI-CODING-AGENTS-IMPLEMENTATION-ROADMAP.md  # Complete implementation plan
+│   ├── Claude-AI-Coding-Agents.md   # Claude-based tools analysis
+│   ├── Gemini-AI-Coding-Agents.md   # Gemini integration research
+│   └── [10+ more documents]          # Comprehensive AI research
 ├── INFRASTRUCTURE/                    # Server and infrastructure docs
 │   ├── FREMONT2_SERVER.md           # Fremont2 server documentation
 │   ├── DOCKER_ARCHITECTURE.md       # Docker configuration
@@ -39,6 +45,7 @@ Comprehensive documentation for the Fanatico network infrastructure, including C
 
 ### Essential Documentation
 
+- [AI Coding Agents Roadmap](AI-CODING/README.md) - AI tools implementation guide
 - [CI/CD Pipeline Overview](CI-CD/PIPELINE_OVERVIEW.md) - Complete GitHub Actions pipeline
 - [Fremont2 Server Guide](INFRASTRUCTURE/FREMONT2_SERVER.md) - Production server details
 - [Security Implementation](SECURITY/SSH_SECURITY.md) - SSH and security configuration
