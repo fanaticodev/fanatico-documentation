@@ -8,18 +8,18 @@ The Fanatico network consists of 11+ sites hosted on Fremont2 server, all manage
 
 | Domain | Type | Technology | Container | Status |
 |--------|------|------------|-----------|--------|
-| **fanatico.pro** | Trading Platform | React + TypeScript + Vite | sites_fanatico_pro_app_1 | ✅ Active |
-| **fanatico.bet** | Betting Platform | Node.js + MariaDB | sites_fanatico_bet_app_1 | ✅ Active |
-| **fanatico.me** | SSO Portal | Node.js + Passkey Auth | sites_fanatico_me_app_1 | ✅ Active |
-| **fanatico.cash** | Gaming Platform | Static + Aviator Backend | sites_aviator_backend_1 | ✅ Active |
-| **fanatico.vip** | Static Site | HTML/CSS/JS | sites_fanatico_vip_app_1 | ✅ Active |
+| **fanatico.pro** | Ready for New Code | Directory Prepared | sites_fanatico_pro_app_1 | 📦 Ready |
+| **fanatico.bet** | Betting Platform | Node.js + MariaDB + Redis | sites_fanatico_bet_app_1 | ✅ Active |
+| **fanatico.me** | SSO Portal | Node.js + Passkey Auth + Redis | sites_fanatico_me_app_1 | ✅ Active |
+| **fanatico.cash** | Aviator Game | React + Socket.IO + Node.js + MongoDB | sites_aviator_frontend_1, sites_aviator_backend_1 | ✅ Active |
+| **fanatico.vip** | VIP Portal | Static Site (Migrated Nov 2025) | sites_fanatico_vip_app_1 | ✅ Active |
 | **fanatico.xyz** | Static Site | HTML/CSS/JS | sites_fanatico_xyz_app_1 | ✅ Active |
 | **fanatico.social** | Social Platform | HTML/CSS/JS | sites_fanatico_social_app_1 | ✅ Active |
 | **fanatico.chat** | Chat Interface | HTML/CSS/JS | sites_fanatico_chat_app_1 | ✅ Active |
 | **fanatico.club** | Club Portal | HTML/CSS/JS | sites_fanatico_club_app_1 | ✅ Active |
 | **fanatico.games** | Gaming Hub | HTML/CSS/JS | sites_fanatico_games_app_1 | ✅ Active |
 | **fanatico.app** | Application Portal | HTML/CSS/JS | sites_fanatico_app_app_1 | ✅ Active |
-| **partners.fanati.co** | Partner Portal | React + TypeScript | sites_partners_fanati_co_app_1 | ✅ Active |
+| **partners.fanati.co** | Partner Portal | PHP 8.1 + NGINX (HybridMLM) | partners_app | ✅ Active |
 
 ## Architecture Overview
 
@@ -55,12 +55,12 @@ fanatico-sites/
 
 ## Site-Specific Details
 
-### fanatico.pro - Professional Trading
-- **Framework**: React 18 + TypeScript
-- **Build Tool**: Vite
-- **Styling**: Tailwind CSS
-- **Features**: Real-time data, charts, trading interface
-- **Container**: NGINX Alpine serving static build
+### fanatico.pro - Ready for New Implementation
+- **Status**: Directory prepared for new codebase
+- **Previous Code**: Aviator game archived to branch `archive/fanatico.pro-aviator-v1`
+- **Container**: NGINX Alpine ready
+- **Deployment**: CI/CD pipeline configured
+- **Note**: Awaiting new codebase implementation
 
 ### fanatico.bet - Betting Platform
 - **Backend**: Node.js + Express
@@ -76,13 +76,14 @@ fanatico-sites/
 - **Features**: Single sign-on, biometric auth
 - **Container**: Node.js Alpine
 
-### fanatico.cash - Gaming Platform
-- **Frontend**: Static site
-- **Backend**: Aviator game server (Node.js)
+### fanatico.cash - Aviator Crash Game
+- **Repository**: Separate repo at [fanaticodev/fanatico-cash](https://github.com/fanaticodev/fanatico-cash)
+- **Frontend**: React with SPA routing (Fixed Nov 25, 2025)
+- **Backend**: Node.js + Express + Socket.IO
 - **Database**: MongoDB
-- **WebSocket**: Socket.IO
-- **Features**: Crash game, FCO tokens, multiplayer
-- **Containers**: NGINX + Node.js + MongoDB
+- **Features**: Real-time multiplayer crash game, FCO tokens
+- **Containers**: sites_aviator_frontend_1 + sites_aviator_backend_1 + sites_aviator_mongo_1
+- **Recent Updates**: SPA routing fix, deployment pipeline improvements
 
 ## Development Workflow
 
@@ -273,4 +274,26 @@ docker-compose up -d [site]
 1. Monitor resource usage
 2. Check database queries
 3. Review application logs
-4. Analyze network traffic
+4. Analyze network traffic## Recent Updates (November 2025)
+
+### Infrastructure Improvements
+- ✅ All 11 fanatico.* sites deployed and operational
+- ✅ fanatico.pro prepared for new codebase (Aviator archived to branch)
+- ✅ fanatico.vip migrated from separate repository to monorepo
+- ✅ fanatico.cash SPA routing fixed (browser reload on /game now works)
+- ✅ Deployment pipeline improved for fanatico.cash
+
+### Repository Organization
+- **Monorepo (fanatico-sites)**: Contains all 11 fanatico.* domain sites
+- **Separate Repositories**:
+  - [fanatico-cash](https://github.com/fanaticodev/fanatico-cash) - Aviator crash game
+  - [partners-fanati-co](https://github.com/fanaticodev/partners-fanati-co) - Partner portal
+  - [multi-sites](https://github.com/fanaticodev/multi-sites) - Multi-domain framework
+  - [fanatico-documentation](https://github.com/fanaticodev/fanatico-documentation) - This documentation
+
+### Container Reorganization (November 24, 2025)
+- Moved aviator-crash containers → sites group
+- Moved tron-pix-app → billing group
+- Renamed abuse_processing → compliance group
+- Moved partnersfanatico containers → sites group
+- Consolidated all site containers for better Docker UI organization

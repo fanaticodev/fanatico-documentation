@@ -69,12 +69,14 @@ Comprehensive documentation for the Fanatico network infrastructure, including C
 - **Network**: 185.34.201.34-37 (primary IPs)
 - **Containers**: 74+ Docker containers
 
-### Deployed Sites
-- fanatico.pro - Professional Trading Solutions
-- fanatico.bet - Betting Platform
-- fanatico.me - SSO with Passkey Auth
-- fanatico.cash - Gaming Frontend
-- fanatico.vip, .xyz, .social, .chat, .club, .games, .app - Static Sites
+### Deployed Sites (All Operational)
+- fanatico.pro - Ready for new codebase (Aviator archived)
+- fanatico.bet - Betting Platform (Node.js + MariaDB)
+- fanatico.me - SSO with Passkey Auth (Node.js + Redis)
+- fanatico.cash - Aviator Crash Game (React + Socket.IO + MongoDB)
+- fanatico.vip - VIP Portal (migrated November 2025)
+- fanatico.xyz, .social, .chat, .club, .games, .app - Static Sites
+- partners.fanati.co - Partner Portal (PHP 8.1 + NGINX)
 
 ### CI/CD Pipeline
 - **Platform**: GitHub Actions
@@ -136,6 +138,6 @@ Internal documentation - Proprietary and Confidential
 
 ---
 
-**Last Updated**: November 12, 2025
+**Last Updated**: November 25, 2025
 **Maintained By**: Fanatico Development Team
 **Status**: Active and Current
