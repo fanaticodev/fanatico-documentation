@@ -83,7 +83,11 @@ fanatico-sites/
 - **Database**: MongoDB
 - **Features**: Real-time multiplayer crash game, FCO tokens
 - **Containers**: sites_aviator_frontend_1 + sites_aviator_backend_1 + sites_aviator_mongo_1
-- **Recent Updates**: SPA routing fix, deployment pipeline improvements
+- **Recent Updates**:
+  - SPA routing fix with nginx configuration (Nov 25, 2025)
+  - JSON parse error resolved with build arguments (Nov 25, 2025)
+  - Deployment pipeline improvements (Nov 25, 2025)
+  - MongoDB connection issues resolved (Nov 24, 2025)
 
 ## Development Workflow
 
@@ -297,3 +301,9 @@ docker-compose up -d [site]
 - Renamed abuse_processing → compliance group
 - Moved partnersfanatico containers → sites group
 - Consolidated all site containers for better Docker UI organization
+
+### Fanatico.cash Fixes (November 25, 2025)
+- **JSON Parse Error**: Fixed frontend build process to include proper API URLs via Docker build arguments
+- **SPA Routing**: Implemented nginx configuration for proper client-side routing
+- **Deployment Pipeline**: Updated GitHub Actions workflow to pass required build arguments
+- **Documentation**: Created comprehensive incident reports and deployment guides
