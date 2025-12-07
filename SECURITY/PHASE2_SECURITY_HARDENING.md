@@ -116,6 +116,8 @@ Phase 2b (If needed - $25-30/dev/mo)
 
 ### 2. Gitleaks Configuration
 
+**Note**: Using free Gitleaks CLI (not the paid gitleaks-action which requires a license for organization repos).
+
 **Custom Rules Added:**
 - MongoDB connection strings
 - JWT secrets
