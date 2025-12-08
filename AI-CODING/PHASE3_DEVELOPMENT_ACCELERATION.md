@@ -154,6 +154,13 @@ chat:
 - `@coderabbitai explain <lines>` - Explain specific code
 - `@coderabbitai resolve` - Dismiss suggestion
 
+**Verification Test** (December 8, 2025):
+- Test PR #11 created on fanatico-sites
+- CodeRabbit responded with walkthrough and pre-merge checks
+- Configuration warning prompted schema v2 migration
+- All configs updated and verified working
+- Test PR closed and branch cleaned up
+
 ### 4. Dependabot (Dependency Management)
 
 **Status**: ✅ Active - Already creating PRs
@@ -370,6 +377,7 @@ aider --verbose
 |------|--------|--------|
 | 2025-12-07 | Phase 3 implementation - CodeRabbit, Continue.dev, documentation | Claude |
 | 2025-12-08 | CodeRabbit verified working, config updated to schema v2, org installation confirmed | Claude |
+| 2025-12-08 | Config v2 schema applied to all 3 repos on main branch, test PR #11 closed | Claude |
 
 ---
 
